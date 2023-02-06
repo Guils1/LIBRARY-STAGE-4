@@ -36,6 +36,7 @@
 
 <script>
 import api from '@/services/api';
+import router from '@/router/index.js'
 
 export default {
     name: 'Login_user',
@@ -53,6 +54,7 @@ export default {
         }
         api.post('/login', data).then(response => {
             localStorage.setItem('token',response.data.token)
+            router.push('/')
         }).catch((error)=>{
             console.log(error.response.status)
         })

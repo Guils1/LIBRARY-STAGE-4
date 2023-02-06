@@ -10,28 +10,28 @@
                     <div class="p-2 w-full">
                         <div class="relative">
                             <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                            <input type="text" id="name" name="name"
+                            <input type="text" id="name" name="name" v-model="name"
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                     </div>
                     <div class="p-2 w-full">
                         <div class="relative">
-                            <label for="name" class="leading-7 text-sm text-gray-600">Email</label>
-                            <input type="text" id="name" name="name"
+                            <label for="name" class="leading-7 text-sm text-gray-600" >Email</label>
+                            <input type="text" id="name" name="name" v-model="email"
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                     </div>
                     <div class="p-2 w-full">
                         <div class="relative">
                             <label for="name" class="leading-7 text-sm text-gray-600">Address</label>
-                            <input type="text" id="name" name="name"
+                            <input type="text" id="name" name="name" v-model="address"
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                     </div>
                     <div class="p-2 w-full">
                         <div class="relative">
                             <label for="name" class="leading-7 text-sm text-gray-600">Contact</label>
-                            <input type="text" id="name" name="name"
+                            <input type="text" id="name" name="name" v-model="contact_phone"
                                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
                     </div>
@@ -77,32 +77,36 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 </template>
 
 <script>
 import api from '@/services/api';
+import router from '@/router/index.js'
 
 export default {
     name: 'Authors-form',
     data() {
         return {
             name: "",
-            photo: "",
-            biography: "",
+            email: "",
+            address: "",
+            contact_phone: "",
         };
     },
     methods: {
         submit() {
         var data = {
             name: this.name,
-            photo: this.photo,
-            biography: this.biography,
+            email: this.email,
+            address: this.address,
+            contact_phone: this.contact_phone
         }
-        api.post('/authors', data).then(response => {
+        api.post('/suppliers', data).then(response => {
             console.log(response)
-            this.$route.push({path: '/login'})
+            router.push('/suppliers')
         }).catch((error)=>{
             console.log(error.response)
         })

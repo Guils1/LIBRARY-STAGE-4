@@ -104,26 +104,34 @@
 
 <script>
 import api from '@/services/api';
+import router from '@/router/index.js'
 
 export default {
     name: 'Authors-form',
     data() {
         return {
             name: "",
-            photo: "",
-            biography: "",
+            cover: "",
+            author: "",
+            genre: "",
+            price: "",
+            stock: "",
+            description: "",
         };
     },
     methods: {
         submit() {
         var data = {
             name: this.name,
-            photo: this.photo,
-            biography: this.biography,
+            cover: this.cover,
+            author: this.author,
+            price: this.price,
+            stock: this.stock,
+            description: this.description,
         }
-        api.post('/authors', data).then(response => {
+        api.post('/books', data).then(response => {
             console.log(response)
-            this.$route.push({path: '/login'})
+            router.push('/books')
         }).catch((error)=>{
             console.log(error.response)
         })

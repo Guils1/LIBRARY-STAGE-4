@@ -62,6 +62,7 @@
 
 <script>
 import api from '@/services/api';
+import router from '@/router/index.js'
 
 export default {
     name: 'Authors-form',
@@ -77,7 +78,7 @@ export default {
         }
         api.post('/genres', data).then(response => {
             console.log(response)
-            this.$route.push({path: '/login'})
+            router.push('/genres')
         }).catch((error)=>{
             console.log(error.response)
         })
