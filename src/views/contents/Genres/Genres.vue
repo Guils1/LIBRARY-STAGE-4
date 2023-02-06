@@ -12,12 +12,13 @@
                 <div class="mb-10"><router-link to="/genres/create">
                         <img src="https://cdn-icons-png.flaticon.com/512/9218/9218728.png" alt="register">
                     </router-link></div>
-                <table class="table-auto w-full text-center whitespace-no-wrap">
+
+                <table v-if="genres" class="table-auto w-full text-center whitespace-no-wrap">
                     <thead>
                         <tr>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300"
                                 id="name">Name</th>
-                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300"
                                 id="name">Actions</th>
                         </tr>
                     </thead>
@@ -39,10 +40,21 @@
                                     </svg>
                                 </a>
                             </td>
-
                         </tr>
                     </tbody>
+
                 </table>
+
+                <table v-else class="table w-full text-center whitespace-no-wrap">
+                    <thead>
+                        <tr>
+                            <th class="px-4 w-full py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+                                id="alert">There are no registered textual genres yet   </th>
+                        </tr>
+                    </thead>
+                </table>
+
+
             </div>
         </div>
     </section>

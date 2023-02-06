@@ -9,23 +9,23 @@
                 <div class="mb-10"><router-link to="/suppliers/create">
                     <img src="https://cdn-icons-png.flaticon.com/512/9218/9218728.png" alt="register">
                 </router-link></div>
-                <table class="table-auto w-full text-left whitespace-no-wrap">
+                <table v-if="suppliers" class="table-auto w-full text-left whitespace-no-wrap text-center">
                     <thead>
                         <tr>
                             <th
-                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                                class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300">
                                 Name</th>
                             <th
-                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300">
                                 Email</th>
                             <th
-                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300">
                                 Address</th>
                             <th
-                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300">
                                 Contact</th>
                             <th
-                                class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                class="px-4 py-3 title-font tracking-wider font-medium text-red-900 text-sm bg-gray-300">
                                 Actions</th>
                             
                         </tr>
@@ -35,7 +35,7 @@
                             <td class="px-4 py-3">{{ supplier.name }}</td>
                             <td class="px-4 py-3">{{ supplier.email }}</td>
                             <td class="px-4 py-3">{{ supplier.address }}</td>
-                            <td class="px-4 py-3 text-gray-900">{{ supplier.contact_phone }}</td>
+                            <td class="px-4 py-3">{{ supplier.contact_phone }}</td>
                             <td class="flex justify-center flex-row flex-grow-0 text-gray-900 text-gray-900">
                                 <a href="" class="p-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -54,6 +54,15 @@
 
                         </tr>
                     </tbody>
+                </table>
+
+                <table v-else class="table w-full text-center whitespace-no-wrap">
+                    <thead>
+                        <tr>
+                            <th class="px-4 w-full py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+                                id="alert">There are no registered suppliers yet</th>
+                        </tr>
+                    </thead>
                 </table>
             </div>
             
