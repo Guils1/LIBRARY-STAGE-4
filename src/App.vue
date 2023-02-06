@@ -21,9 +21,7 @@ export default {
   methods: {
     validate() {
       api.post('/me').then((response)=>{
-        console.log(response)
         if (response.data.status == 200) {
-          console.log(response.data.status);
           router.push({ path: '/login'})
         }
         

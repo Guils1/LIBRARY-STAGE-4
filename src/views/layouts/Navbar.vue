@@ -33,9 +33,9 @@
                     </router-link>
                 </a>
                 <a class="mr-5 hover:text-gray-900">
-                    <router-link to="/logout">
+                    <a @click="logout">
                         <img src="https://cdn-icons-png.flaticon.com/512/9622/9622942.png" alt="">
-                    </router-link>
+                    </a>
                 </a>
             </nav>
             <a
@@ -54,6 +54,7 @@
 
 <script>
 import api from '@/services/api.js';
+// import { ref } from 'vue';
 
 export default {
     data() {
@@ -66,12 +67,31 @@ export default {
         api.post('me').then(response => {
             this.user = response.data;
         })
+    },
+    setup() {
+        const logout = async () => {
+            try {
+                const response = await api.post('logout');
+
+                if (!response.ok) {
+                    throw new Error('Logout failed');
+                }
+
+                // Redireciona o usuário para a página de login ou realiza outra ação adequada
+                // window.location.href = '/login';
+            } catch (error) {
+                console.error(error);
+            }
+        };
+        return {
+            logout,
+        };
     }
 };
 </script>
 
 <style scoped>
-a img{
+a img {
     width: 1.5em;
 }
 
