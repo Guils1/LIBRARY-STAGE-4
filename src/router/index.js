@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Guard from '../services/middleware'
 
-
 import HomeView from '../views/HomeView.vue'
 import NotFound from '../components/NotFound.vue'
 import Login_user from '../views/contents/User/Login_user.vue'
