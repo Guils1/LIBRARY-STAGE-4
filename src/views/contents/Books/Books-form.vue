@@ -2,7 +2,7 @@
     <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Books</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Register a book</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The book has fundamental importance in our life. They have benefits that help us in many ways, such as stimulating creativity, improving vocabulary and enriching culture.</p>
             </div>
             <div class="lg:w-1/2 md:w-2/3 mx-auto">

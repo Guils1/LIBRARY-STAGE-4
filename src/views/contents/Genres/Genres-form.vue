@@ -2,8 +2,8 @@
     <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Authors</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Working with textual genres also allows the articulation of activities between areas of knowledge, directly contributing to the significant learning of reading practice, production and comprehension.</p>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Register a genre</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Textual genres have a social function in a given communicative situation, that is, for each text produced, I select, even if unconsciously, a genre based on what I want to communicate and on the basis of the effect I hope to produce on my interlocutor.</p>
             </div>
             <div class="lg:w-1/2 md:w-2/3 mx-auto">
                 <div class="flex flex-wrap -m-2">

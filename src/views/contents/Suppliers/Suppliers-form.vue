@@ -2,7 +2,7 @@
     <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Suppliers</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Register a supplier</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base">In addition to receiving the purchase request, separating and sending the orders, the supplier must now monitor the acquisition of raw materials and generate stock and flow for commercial activities. The objective is that he has control over the flow of materials and can alert the buyer whenever he finds something wrong.</p>
             </div>
             <div class="lg:w-1/2 md:w-2/3 mx-auto">
