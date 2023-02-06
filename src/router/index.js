@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Guard from '../services/middleware'
+
+
 import HomeView from '../views/HomeView.vue'
 import NotFound from '../components/NotFound.vue'
 import Login_user from '../views/contents/User/Login_user.vue'
@@ -10,7 +13,6 @@ import BooksShow from '../views/contents/Books/BooksShow.vue'
 import Customers from '../views/contents/Customers/Customers.vue'
 import Genres from '../views/contents/Genres/Genres.vue'
 import Suppliers from '../views/contents/Suppliers/Suppliers.vue'
-
 import AuthorCreate from '../views/contents/Authors/Authors-form.vue'
 import BooksCreate from '../views/contents/Books/Books-form.vue'
 import CustomersCreate from '../views/contents/Customers/Customers-form.vue'
@@ -23,7 +25,8 @@ import SuppliersCreate from '../views/contents/Suppliers/Suppliers-form.vue'
 const routes = [{
         path: '/',
         name: 'home',
-        component: HomeView
+        component: HomeView,
+        beforeEnter: Guard.auth
     },
     {
         path: '/login',
@@ -43,62 +46,85 @@ const routes = [{
     {
         path: '/authors',
         name: 'authors',
-        component: Authors
+        component: Authors,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/authors/:id',
         name: 'authorShow',
-        component: AuthorShow
+        component: AuthorShow,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/authors/create',
         name: 'authorCreate',
-        component: AuthorCreate
+        component: AuthorCreate,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/books',
         name: 'books',
-        component: Books
+        component: Books,
+        beforeEnter: Guard.auth
     },
     {
         path: '/books/:id',
         name: 'booksShow',
-        component: BooksShow
+        component: BooksShow,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/books/create',
         name: 'booksCreate',
-        component: BooksCreate
+        component: BooksCreate,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/customers',
         name: 'customers',
-        component: Customers
+        component: Customers,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/customers/create',
         name: 'customersCreate',
-        component: CustomersCreate
+        component: CustomersCreate,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/genres',
         name: 'genres',
-        component: Genres
+        component: Genres,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/genres/create',
         name: 'genresCreate',
-        component: GenresCreate
+        component: GenresCreate,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/suppliers',
         name: 'suppliers',
-        component: Suppliers
+        component: Suppliers,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/suppliers/create',
         name: 'suppliersCreate',
-        component: SuppliersCreate
+        component: SuppliersCreate,
+        beforeEnter: Guard.auth
+
     },
     {
         path: '/logout',

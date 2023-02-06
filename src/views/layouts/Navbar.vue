@@ -73,7 +73,7 @@ export default {
             try {
                 const token = localStorage.getItem('token');
                 console.log(token);
-
+                
                 const response = await fetch('http://localhost:88/api/logout', {
                     method: 'POST',
                     headers: {
