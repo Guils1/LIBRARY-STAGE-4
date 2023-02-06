@@ -71,22 +71,32 @@ export default {
     setup() {
         const logout = async () => {
             try {
-                const response = await api.post('logout');
+                const token = localStorage.getItem('token');
+                console.log(token);
 
+                const response = await fetch('http://localhost:88/api/logout', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                    },
+                });
+                
                 if (!response.ok) {
                     throw new Error('Logout failed');
                 }
 
+                localStorage.removeItem('token');
                 // Redireciona o usuário para a página de login ou realiza outra ação adequada
-                // window.location.href = '/login';
+                window.location.href = '/login';
             } catch (error) {
                 console.error(error);
             }
         };
+
         return {
             logout,
         };
-    }
+    },
 };
 </script>
 
