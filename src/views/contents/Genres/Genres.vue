@@ -72,7 +72,6 @@ export default {
     mounted() {
         api.get('genres').then(response => {
             this.genres = response.data;
-            console.log(response.data);
         })
     }
 };

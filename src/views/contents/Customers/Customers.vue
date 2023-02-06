@@ -3,8 +3,8 @@
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
                 <div class="bg-orange-100 border-l-4 border-gray-500 text-gray-700 p-4" role="alert">
-                    <p class="font-bold">Esta página está em manutenção</p>
-                    <p>Desculpe pela incoveniência.<br>Nosso site está passando por manutenção programada<br>Obrigado pela compreensão.</p>
+                    <p class="font-bold">This page is under maintenance</p>
+                    <p>Sorry for the inconvenience.<br>Our website is undergoing scheduled maintenance<br>Thank you for your understanding.</p>
                 </div>
             </div>
 

@@ -31,17 +31,14 @@
                 mb-2
                 text-gray-900
               ">
-            Os maiores escritores de todos<br />
-            os tempos
+              The greatest writers of all
+              the times
           </h1>
           <div class="h-1 w-20 bg-indigo-500 rounded"></div>
         </div>
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-          Se você é daqueles que mal acabou de abrir um livro e já está
-          pensado no próximo que irá ler então chega junto, esse artigo é a
-          sua cara! Separamos para você a biografia dos maiores escritores da
-          literatura universal. <br />Aproveite para se inspirar e adicionar
-          mais títulos na sua lista de leitura.
+          If you are one of those who have just opened a book and are already thinking about the next one to read, then come along, this article is for you! We separate for you the biography of the greatest writers of universal literature.
+Take the opportunity to get inspired and add more titles to your reading list.
         </p>
       </div>
       <div class="flex flex-wrap -m-4">
@@ -61,12 +58,12 @@
               Machado de Assis
             </h2>
             <p class="leading-relaxed text-base">
-              Falar de literatura brasileira e não citar o nome de Machado de
-              Assis seria um crime. De origem humilde, filho de um pintor de
-              paredes com uma imigrante açoriana, Machado enfrentou desde a
-              mais tenra infância uma série de barreiras. Ele passou por
-              dificuldades econômicas, ficou órfão cedo, também perdeu a irmã
-              e teve que conviver com uma terrível epilepsia...
+              Talking about Brazilian literature and not mentioning the name of Machado de
+              Assisi would be a crime. Of humble origin, the son of a painter from
+              walls with an Azorean immigrant, Machado faced since childhood
+              early childhood a series of barriers. he went through
+              economic difficulties, he was orphaned early, he also lost his sister
+              and had to live with a terrible epilepsy...
             </p>
           </div>
         </div>
@@ -86,14 +83,14 @@
               William Shakespeare
             </h2>
             <p class="leading-relaxed text-base">
-              O nome por trás dos maiores clássicos do teatro - Hamlet,
-              Othelo, Macbeth e Romeu e Julieta - é o de William Shakespeare,
-              um nome incontornável da dramaturgia.<br />
+              The name behind the greatest theater classics - Hamlet,
+              Othelo, Macbeth and Romeo and Juliet - is that of William Shakespeare,
+              an unavoidable name in dramaturgy.
 
-              O escritor inglês começou a trabalhar quando tinha 13 anos
-              depois de uma súbita falência da família. Quando se mudou para
-              Londres, trabalhou como guardador de cavalos na porta do
-              primeiro teatro da cidade...
+              The English writer started working when he was 13
+              after a sudden family bankruptcy. When you moved to
+              London, worked as a keeper of horses on the doorstep of
+              first theater in town...
             </p>
           </div>
         </div>
@@ -113,12 +110,12 @@
               José Saramago
             </h2>
             <p class="leading-relaxed text-base">
-              Vencedor do Prêmio Nobel de Literatura, é preciso dizer mais
-              alguma coisa? José Saramago colecionou uma série de prêmios ao
-              longo da vida como, por exemplo, o Camões. Nascido em Santarém e
-              criado em Lisboa, Saramago era filho de camponeses e se formou
-              no ensino técnico como serralheiro mecânico. Para se sustentar,
-              também trabalhou como funcionário público...
+              Winner of the Nobel Prize for Literature, need I say more
+              something? José Saramago collected a series of awards by
+              throughout life, such as, for example, Camões. Born in Santarém and
+              raised in Lisbon, Saramago was the son of peasants and graduated
+              in technical education as a mechanical locksmith. To support yourself,
+              He also worked as a civil servant...
             </p>
           </div>
         </div>
@@ -138,11 +135,11 @@
               Fiódor Dostoiévski
             </h2>
             <p class="leading-relaxed text-base">
-              Fiódor Dostoiévski escreveu obras-primas como Os Irmãos
-              Karamázov (1880) e Crime e Castigo (1866). Nascido na capital da
-              Rússia, ficou órfão de mãe ainda cedo e teve o pai assassinado
-              quando tinha 18 anos. Se formou em engenharia e começou a
-              carreira literária fazendo traduções de obras de Balzac e
+              Fyodor Dostoevsky wrote masterpieces like The Brothers
+              Karamazov (1880) and Crime and Punishment (1866). Born in the capital of
+              Russia, his mother was orphaned at an early age and his father was murdered
+              when he was 18 years old. He graduated in engineering and started to
+              literary career translating works by Balzac and
               Schiller.
             </p>
           </div>
@@ -153,10 +150,10 @@
 
   <div class="flex flex-col text-center w-full mt-5">
     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-      Livros "BEST SELLERS" em 2022
+      "BEST SELLERS" books in 2022
     </h1>
     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-      Escritoras dominam entre os livros mais vendidos em 2022
+      Women writers dominate among the bestselling books in 2022
     </p>
   </div>
 
@@ -253,22 +250,56 @@
     </div>
   </section>
 
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex w-full mb-20 flex-wrap">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Customer Success</h1>
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Customer success, or in English, customer success, is a business strategy that aims to ensure that consumers are using the products or services purchased correctly. Customer Success differentiates itself from Support by offering proactive service.</p>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://www.milldesk.com.br/wp-content/uploads/2019/07/livros-sobre-atendimento-ao-cliente.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7y0x_37xbJrPi9IzCHPF3_GFMVfbQBZ1TQ&usqp=CAU">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://soluzionenegociosdigitais.com.br/wp-content/uploads/2022/12/Impostos-na-venda-de-ebooks-foto-de-infoprodutora-feliz-ao-reduzir-a-tributacao-do-livro-digital-com-uma-contabilidade-especializada-1.jpg">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://s2.glbimg.com/n0560YsjsQqNXWQ32IHMM9yktx0=/e.glbimg.com/og/ed/f/original/2019/06/05/livro.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2020/10/14/2a059f81-a547-442e-9213-14160c68073f.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="http://i.mlcdn.com.br/portaldalu/fotosconteudo/31256.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-          Gêneros de livros mais vendidos no Brasil
+          Best selling book genres in Brazil
         </h1>
         <h1 class="mt-3">
-          Dentre os gêneros de livros mais vendidos em nosso país, é
-          importante destacar que a Bíblia Sagrada continua sendo a obra mais
-          lida, sendo considerada uma categoria à parte, não sendo incluída no
-          gênero “Religioso”, com 42% da preferência. Na sequência, aparecem
-          os livros religiosos, contos e romances, cada qual com 22%. O que se
-          percebe nesses últimos anos, mesmo sem os dados oficiais, é um forte
-          crescimento de livros com temática religiosa, em função do aumento
-          vertiginoso dos evangélicos no país. Confira a seguir algumas
-          características dos gêneros de livros mais vendidos no Brasil.
+          Among the genres of best-selling books in our country, it is
+          It is important to highlight that the Holy Bible continues to be the most
+          read, being considered a separate category, not being included in the
+          gender “Religious”, with 42% of preference. Next, appear
+          religious books, short stories and novels, each with 22%. what if
+          perceived in recent years, even without official data, is a strong
+          growth of religious-themed books, due to the increase
+          vertiginous growth of evangelicals in the country. Check below some
+          characteristics of the best-selling book genres in Brazil.
         </h1>
       </div>
       <div class="flex flex-wrap -m-4">
@@ -292,17 +323,17 @@
                   alt="" />
               </div>
               <h2 class="text-gray-900 text-lg title-font font-medium">
-                Religiosos
+                Religious
               </h2>
             </div>
             <div class="flex-grow">
               <p class="leading-relaxed text-base">
-                Os livros religiosos são obras literárias que tratam sobre a
-                religião de modo geral, seja sobre uma religião específica ou
-                sobre assuntos relacionados a ela em qualquer nível, inclusive
-                aqueles que abordam a espiritualidade como um todo. Esta obra
-                pode ser de ficção ou não e geralmente é escrita em prosa ou
-                versos.
+                Religious books are literary works that deal with the
+                religion in general, whether about a specific religion or
+                on matters related to it at any level, including
+                those who approach spirituality as a whole. this work
+                may or may not be fiction and is usually written in prose or
+                verses.
               </p>
               <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -331,16 +362,16 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/8545/8545842.png" alt="" />
               </div>
               <h2 class="text-gray-900 text-lg title-font font-medium">
-                Contos
+                Tales
               </h2>
             </div>
             <div class="flex-grow">
               <p class="leading-relaxed text-base">
-                Os contos, por sua vez, são obras com uma narrativa curta e
-                com um conflito único. Ou seja, sua estrutura tem um espaço
-                narrativo menor que outros gêneros, e a narrativa é composta
-                por poucos personagens que interagem acerca de um momento de
-                tensão literariamente conhecido como clímax.
+                Short stories, on the other hand, are works with a short and
+                with a unique conflict. That is, its structure has a space
+                narrative smaller than other genres, and the narrative is composed
+                by a few characters who interact about a moment of
+                tension literarily known as climax.
               </p>
               <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -369,16 +400,16 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/2267/2267557.png" alt="" />
               </div>
               <h2 class="text-gray-900 text-lg title-font font-medium">
-                Romances
+                Affairs
               </h2>
             </div>
             <div class="flex-grow">
               <p class="leading-relaxed text-base">
-                Já os romances são narrativas longas, com diversos conflitos e
-                uma rede de personagens muito mais complexa. Neste gênero de
-                livro, o texto é estruturado em forma de prosa, trazendo um
-                enredo integral, com marcas temporais, cenários e personagens
-                bem explorados, e geralmente é de caráter fantasioso.
+                Novels, on the other hand, are long narratives, with several conflicts and
+                a much more complex network of characters. In this genre of
+                book, the text is structured in prose form, bringing a
+                Full storyline, with timestamps, settings, and characters
+                well explored, and is generally fanciful in character.
               </p>
               <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -395,7 +426,7 @@
 
   <div class="flex flex-col text-center w-full mt-5 mb-5">
     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-      Entre em contato conosco
+      Contact us
     </h1>
     <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
   </div>
@@ -425,7 +456,7 @@
           Feedback
         </h2>
         <p class="leading-relaxed mb-5 text-gray-600">
-          Deixe seu contato e seu feedback nos campos abaixos!
+          Leave your contact and your feedback in the fields below!
         </p>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
@@ -447,7 +478,7 @@
               " />
         </div>
         <div class="relative mb-4">
-          <label for="message" class="leading-7 text-sm text-gray-600">Messagem</label>
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
           <textarea id="message" name="message" class="
                 w-full
                 bg-white
@@ -480,7 +511,7 @@
             ">
           Enviar
         </button>
-        <p class="text-xs text-gray-500 mt-3">Projeto library - pedbot</p>
+        <p class="text-xs text-gray-500 mt-3">Library project - Pedbot</p>
       </div>
     </div>
   </section>
@@ -515,7 +546,7 @@
           TECH LIBRARY
         </h2>
         <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-900">
-          BAIXE O TECH LIBRARY
+          DOWNLOAD THE TECH LIBRARY
         </h1>
       </div>
       <div class="
@@ -583,15 +614,15 @@
           </path>
         </svg>
         <p class="leading-relaxed text-lg">
-          Para que escrevo? E eu sei? Sei não. Sim, é verdade, às vezes também
-          penso que eu não sou eu, pareço pertencer a uma galáxia longínqua de
-          tão estranho que sou de mim. Sou eu? Espanto-me com o meu encontro.
+          What do I write for? Yeah, I know? I do not know. Yes, it's true, sometimes too
+          I think I'm not me, I seem to belong to a distant galaxy of
+          so strange that I am from me. It is me? I am astonished by my encounter.
         </p>
         <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
           CLARICE LISPECTOR
         </h2>
-        <p class="text-gray-500">Escritora e Jornalista</p>
+        <p class="text-gray-500">Writer and Journalist</p>
       </div>
     </div>
   </section>

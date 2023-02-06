@@ -56,7 +56,6 @@ export default {
     mounted() {
         api.get('books').then(response => {
             this.books = response.data;
-            console.log(response.data);
         })
     }
 };

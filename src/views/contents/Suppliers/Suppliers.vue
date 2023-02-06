@@ -82,7 +82,6 @@ export default {
     mounted() {
         api.get('suppliers').then(response => {
             this.suppliers = response.data;
-            console.log(response.data);
         })
     }
 };

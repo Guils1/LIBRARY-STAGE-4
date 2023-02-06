@@ -59,7 +59,6 @@ export default {
     mounted() {
         api.get('authors').then(response => {
             this.authors = response.data;
-            console.log(response.data);
         })
     }
 };
