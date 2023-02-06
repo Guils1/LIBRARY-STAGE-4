@@ -23,8 +23,7 @@
                             src="https://fiverr-res.cloudinary.com/t_mobile_web_2,q_auto,f_auto/gigs/176798931/original/38d9fab8b8c73b1299c35a2372d77243a45a6211.jpg">
                     </div>
                     <h2 class="text-xl font-medium title-font text-gray-900 mt-5">{{ book.name }} </h2>
-                    <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr
-                        cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+                    <p class="text-base leading-relaxed mt-2">{{ book.description }}</p>
                     <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
