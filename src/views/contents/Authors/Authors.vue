@@ -7,13 +7,14 @@
             </div>
 
             <div class="mb-10"><router-link to="/authors/create">
-                <img src="https://cdn-icons-png.flaticon.com/512/9218/9218728.png" alt="register">
+                <img id="img" src="https://cdn-icons-png.flaticon.com/512/9218/9218728.png" alt="register">
             </router-link></div>
+            
             <div class="flex flex-wrap -m-4">
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="author in authors" :key="author.id">
                     <a href="" @click="author">
                         <a class="block relative h-48 rounded overflow-hidden" href="">
-                        <img alt="authors" class="object-cover object-center w-full h-full block" src="">
+                        <img alt="authors" class="object-cover object-center w-full h-full block" src="https://i.em.com.br/qLHzeECVDHr522qtpIOK67YMQtk=/790x/smart/imgsapp.em.com.br/app/noticia_127983242361/2020/06/26/1159973/20200625184351361767e.jpg">
                         </a>
                         <div class="mt-4">
                             <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1 ml-3">Autor</h3>
@@ -52,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-img {
-    width: 2.8em;
-}
+    #img {
+        width: 2.8em;
+    }
 </style>
