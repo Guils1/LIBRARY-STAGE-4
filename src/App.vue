@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar />
+  <router-view />
+  <Baseboard />
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import api from './services/api';
+import Navbar from './views/layouts/Navbar.vue';
+import Baseboard from './views/layouts/Baseboard.vue';
+import router from './router/index.js'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Baseboard
+  },
+
+  methods: {
+    validate() {
+      api.post('/me').then((response)=>{
+        console.log(response)
+        if (response.data.status == 200) {
+          console.log(response.data.status);
+          router.push({ path: '/login'})
+        }
+        
+      })
+    }
+  },
+  created(){
+    this.validate()
+    var list = ['home']
+
+    if(!list.includes(localStorage.getItem('route'))){
+      this.validate()
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
