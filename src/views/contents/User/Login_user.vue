@@ -54,7 +54,6 @@ export default {
         api.post('/login', data).then(response => {
             console.log(response)
             localStorage.setItem('token',response.data.token)
-            this.$route.push({path: '/'})
         }).catch((error)=>{
             console.log(error.response.status)
         })
