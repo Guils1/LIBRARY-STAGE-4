@@ -26,7 +26,7 @@ class Books extends Model
     public function rules() {
         return [
             'name' => 'required|unique:books,name,'.$this->id.'|min:3',
-            'cover' => 'required|file',
+            'cover' => 'file',
             'description' => 'required',
             'price' => 'required',
             'authors_id' => 'required|integer',

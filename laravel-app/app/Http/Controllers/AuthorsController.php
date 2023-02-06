@@ -41,8 +41,17 @@ class AuthorsController extends Controller
     {
         // Validação
         $request->validate($this->authors->rules(), $this->authors->feedback());
+        
         // Instanciando objeto
-        authors::create($request->all());
+        $photo = $request->file('photo');
+        $photo_urn = $photo->store('images/authors', 'public');
+        
+        authors::create([
+            'name' => $request->name,
+            'photo' => $photo_urn,
+            'biography' => $request->biography,
+        ]);
+        
         // Corfimação do create com tratamento e código de status
         return response(
             ['msg' => 'Author criado com sucesso'], 201
@@ -91,9 +100,9 @@ class AuthorsController extends Controller
             foreach($this->authors->rules() as $input => $regra) {
 
             // Coletando apenas regras aplicaveis aos parametros passado na requisição
-               if(array_key_exists($input, $request->all())) {
+            if(array_key_exists($input, $request->all())) {
                     $rulesD[$input] = $regra;
-               }
+            }
             }
             
             // Validação para o método patch

@@ -27,7 +27,7 @@ class Authors extends Model
     public function rules() {
         return [
             'name' => 'required|unique:authors,name,'.$this->id.'|min:3',
-            'photo' => 'required|file',
+            'photo' => 'required|file|mimes:png,jpeg,jpg',
             'biography' => 'required'
         ];
     }
