@@ -51,7 +51,7 @@ class AuthorsController extends Controller
             'photo' => $photo_urn,
             'biography' => $request->biography,
         ]);
-        
+
         // Corfimação do create com tratamento e código de status
         return response(
             ['msg' => 'Author criado com sucesso'], 201
@@ -89,42 +89,41 @@ class AuthorsController extends Controller
      */
     public function update(UpdateAuthorsRequest $request, Authors $authors, $id)
     {
-        // Instanciando objeto
-        authors::find($id);
+        $authors = $this->authors->find($id);
 
-        // Regras de validação para o método patch
-        $rulesD = array();
-        if($request->method() === "PATCH") {
+        if($authors === null) {
+            return response()->json(['erro' => 'Impossível realizar a atualização. O recurso solicitado não existe'], 404);
+        }
 
-            // Percorrendo regras definida no model
-            foreach($this->authors->rules() as $input => $regra) {
+        if($request->method() === 'PATCH') {
 
-            // Coletando apenas regras aplicaveis aos parametros passado na requisição
-            if(array_key_exists($input, $request->all())) {
-                    $rulesD[$input] = $regra;
-            }
+            $regrasDinamicas = array();
+
+            //percorrendo todas as regras definidas no Model
+            foreach($authors->rules() as $input => $regra) {
+                
+                //coletar apenas as regras aplicáveis aos parâmetros parciais da requisição PATCH
+                if(array_key_exists($input, $request->all())) {
+                    $regrasDinamicas[$input] = $regra;
+                }
             }
             
-            // Validação para o método patch
-            $request->validate($rulesD, $this->authors->feedback());
-        
-        } else {
-            // Validação para o método put
-            $request->validate($this->authors->rules(), $this->authors->feedback());
-        }
+            $request->validate($regrasDinamicas, $authors->feedback());
 
-        // Controle de fluxos com códigos de status
-        if ($authors === null) {
-            return response(
-                ['erro' => 'Não foi possível atualizar, pois o recurso solicitado não existe'], 404
-            );
         } else {
-            // Atualização dos dados e retorno com tratamento para página {{ nome da página }} com código de status
-            $authors->update($request->all());
-            return response(
-                ['msg' => 'Author atualizado com sucesso'], 200
-            );
+            $request->validate($authors->rules(), $authors->feedback());
         }
+        
+        $photo = $request->file('photo');
+        $photo_urn = $photo->store('images/authors', 'public');
+
+        $authors->update([
+            'name' => $request->name,
+            'photo' => $photo_urn,
+            'biography' => $request->biography,
+        ]);
+
+        return response()->json($authors, 200);
     }
 
     /**
