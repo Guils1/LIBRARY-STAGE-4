@@ -1,5 +1,6 @@
 <template>
     <header class="text-gray-600 body-font">
+
         <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
             <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
                 <a class="mr-5 hover:text-gray-900">
